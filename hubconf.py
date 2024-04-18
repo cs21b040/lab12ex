@@ -177,7 +177,7 @@ def get_loss_on_single_point(x0, y0, mynn=None):
   # the lossval should have grad_fn attribute set
   return lossval
 
-def train_combined_encdec_predictor(mynn=None,X,y, epochs=11):
+def train_combined_encdec_predictor(X, y, mynn=None, epochs=11):
   # X, y are provided as tensor
   # perform training on the entire data set (no batches etc.)
   # for each epoch, update weights

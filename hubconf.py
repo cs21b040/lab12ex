@@ -171,7 +171,7 @@ def get_mnist_tensor():
   # write your code
   return X,y
 
-def get_loss_on_single_point(mynn=None,x0,y0):
+def get_loss_on_single_point(x0, y0, mynn=None):
   y_pred, xencdec = mynn(x0)
   lossval = mynn.loss_fn(x0,y0,y_pred,xencdec)
   # the lossval should have grad_fn attribute set

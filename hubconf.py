@@ -192,7 +192,9 @@ def train_combined_encdec_predictor(X, y, mynn=None, epochs=11):
     optimzer.step()
     
   return mynn
-    
+
+def printHI():
+  return "HI"
 
 
 
